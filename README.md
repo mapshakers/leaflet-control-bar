@@ -25,15 +25,15 @@ map.addControl(controlBar);
 ```
 
 ### Options
-- **position**:
-- * top  *(default)*
-- * bottom
-- * left
-- * right
+* **position**:
+    * top  *(default)*
+    * bottom
+    * left
+    * right
 
-- **visibility**: 
-- * true
-- * false
+* **visibility**: 
+    * true *visible on add (default)*
+    * false
  
 ### Methods
  
@@ -73,4 +73,4 @@ Available events:
 **leaflet-control-bar** is free software, and may be redistributed under the MIT-LICENSE.
 
 
-**leaflet-control-bar** is based on [leaflet-sidebar plugin](https://github.com/Turbo87/leaflet-sidebar/blob/master/README.md).
+**leaflet-control-bar** is based on [leaflet-sidebar plugin](https://github.com/Turbo87/leaflet-sidebar).
