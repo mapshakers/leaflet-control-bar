@@ -1,7 +1,7 @@
 {
   "name": "leaflet-control-bar",
   "version": "0.0.1",
-  "description": "A simple leaflet plugin generates navbar.",
+  "description": "A simple leaflet control bar plugin.",
   "main": "src/L.Control.Bar.js",
   "author": "Filip Zavadil",
   "license": "MIT",
