@@ -1,0 +1,98 @@
+.leaflet-control-bar{
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2100;
+}
+
+/** TOP **/
+.leaflet-control-bar-top.leaflet-control-bar {
+    height: 50px;
+    width: 100%;
+    top: -50px;
+    transition: top 0.5s;
+}
+.leaflet-control-bar-top.leaflet-control-bar.visible {
+    top: 0;
+}
+.leaflet-control-bar-top.leaflet-control-bar.visible ~ .leaflet-top {
+    top: 50px;
+    transition: top 0.5s;
+}
+.leaflet-control-bar-top.leaflet-control-bar ~ .leaflet-top {
+    transition: top 0.5s;
+}
+
+/** BOTTOM **/
+.leaflet-control-bar-bottom.leaflet-control-bar {
+    height: 50px;
+    width: 100%;
+    bottom: -50px;
+    transition: bottom 0.5s;
+}
+.leaflet-control-bar-bottom.leaflet-control-bar.visible {
+    bottom: 0;
+}
+.leaflet-control-bar-bottom.leaflet-control-bar.visible ~ .leaflet-bottom {
+    bottom: 58px;
+    transition: bottom 0.5s;
+}
+.leaflet-control-bar-bottom.leaflet-control-bar ~ .leaflet-bottom {
+    transition: bottom 0.5s;
+}
+
+/** LEFT **/
+.leaflet-control-bar-left.leaflet-control-bar {
+    height:100%;
+    width: 50px;
+    left: -50px;
+    transition: left 0.5s;
+}
+.leaflet-control-bar-left.leaflet-control-bar.visible {
+    left: 0  ;
+}
+.leaflet-control-bar-left.leaflet-control-bar.visible ~ .leaflet-left {
+    left: 50px;
+    transition: left 0.5s;
+}
+.leaflet-control-bar-left.leaflet-control-bar ~ .leaflet-left {
+    left: 0;
+    transition: left 0.5s;
+}
+
+/** RIGHT **/
+.leaflet-control-bar-right.leaflet-control-bar {
+    height:100%;
+    width: 50px;
+    right: -50px;
+    transition: right 0.5s;
+}
+.leaflet-control-bar-right.leaflet-control-bar.visible {
+    right: 0;
+    transition: right 0.5s;
+}
+.leaflet-control-bar-right.leaflet-control-bar.visible ~ .leaflet-right {
+    right: 50px;
+    transition: right 0.5s;
+}
+
+/** SHARED **/
+.leaflet-control-bar > .leaflet-control {
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+    margin: 0px;
+    padding: 4px;
+}
+.leaflet-touch .leaflet-control-bar > .leaflet-control {
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+}

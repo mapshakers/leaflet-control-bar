@@ -1,0 +1,12 @@
+{
+  "name": "leaflet-control-bar",
+  "version": "0.0.1",
+  "description": "A simple leaflet plugin generates navbar.",
+  "main": "src/L.Control.Bar.js",
+  "author": "Filip Zavadil",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": ">=0.7.3"
+  },
+  "keywords": ["gis", "map","bar","leaflet"]
+}
