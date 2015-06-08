@@ -10,7 +10,7 @@
 .leaflet-control-bar-top.leaflet-control-bar {
     height: 50px;
     width: 100%;
-    top: -50px;
+    top: -55px;
     transition: top 0.5s;
 }
 .leaflet-control-bar-top.leaflet-control-bar.visible {
@@ -86,7 +86,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,1);
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
     margin: 0px;
     padding: 4px;

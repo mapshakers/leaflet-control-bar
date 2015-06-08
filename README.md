@@ -5,15 +5,15 @@ Simple navigation bar for excellent javascript mapping library [Leaflet](http://
 
 *Compatible with Leaflet 0.6.0 or newer*
 
-## Examples
-todo
+## Example
+[Check out demo!](http://filipzava.github.io/leaflet-control-bar)
 
 ## Using the plugin
 
 ### Usage
 Create an element
 ```html
- <div id="bar"> ... </div>
+ <div id="bar"></div>
 ```
 Create a new L.Control.Bar object and append to the map  
 ```javascript
@@ -49,6 +49,9 @@ controlBar.toggle();
 
 // Check control bar visibility
 var visible = controlBar.isVisible();
+
+// Set content to control bar
+controlBar.setContent('<p>This is sample content :)</p>');
 ~~~~
  
  
@@ -62,15 +65,14 @@ controlBar.on('shown', function () {
 
 Available events:
 
-- **show**: Show animation is starting, sidebar will be visible.
-- **shown**: Show animation finished, sidebar is now visible.
-- **hide**: Hide animation is starting, sidebar will be hidden.
-- **hidden**: Hide animation finished, sidebar is now hidden.
+- **show**: Show animation is starting, bar will be visible.
+- **shown**: Show animation finished, bar is now visible.
+- **hide**: Hide animation is starting, bar will be hidden.
+- **hidden**: Hide animation finished, bar is now hidden.
 
  
 ### License
 
 **leaflet-control-bar** is free software, and may be redistributed under the MIT-LICENSE.
 
-
-**leaflet-control-bar** is based on [leaflet-sidebar plugin](https://github.com/Turbo87/leaflet-sidebar).
+Inspired by [leaflet-sidebar](https://github.com/Turbo87/leaflet-sidebar) plugin.
