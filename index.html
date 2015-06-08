@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>leaflet-control-bar</title>
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
+    <script src="https://rawgit.com/filipzava/leaflet-control-bar/master/src/L.Control.Bar.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/filipzava/leaflet-control-bar/master/src/L.Control.Bar.css" />
+
+    <style>
+        #map { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        a { color: #0077ff; }
+    </style>
+
+</head>
+
+<body>
+<a href="https://github.com/filipzava/leaflet-control-bar"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 3000" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+<div id="map"></div>
+
+<div id="bar"><p style="font-weight: bold; text-align: center;font-size: larger"> Hello this is top bar! Click to the marker to toggle bar :) </p></div>
+
+<script>
+
+    var map = L.map('map').setView([50.0886,14.4224], 15);
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var controlBar = L.control.bar('bar',{
+        position:'top',
+        visible:false
+    });
+    map.addControl(controlBar);
+
+
+
+    var marker = L.marker([50.0874,14.4212],{title:'Toggle control bar.'}).addTo(map)
+    marker.on('click',function(){
+        controlBar.toggle();
+    })
+
+
+    setTimeout(function(){ controlBar.show()},500)
+
+</script>
+</body>
+</html>
